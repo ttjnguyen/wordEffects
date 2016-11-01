@@ -29,31 +29,24 @@ int main(int argc, const char * argv[]) {
             printf("Choose an operation from 1 to 6: ");
             scanf("%d", &number);
             
-            // convert char array to an NSString object
             NSString *inputString = [NSString stringWithUTF8String:inputChars];
             
-            // Operation 1
             NSString *uppercaseString = [inputString uppercaseString];
             
-            // Operation 2
             NSString *lowerCaseString = [inputString lowercaseString];
             
-            // Operation 3
             NSUInteger numberizeString = [inputString length];
             
-            // Operation 4
             
             NSMutableString *mutableString = [NSMutableString stringWithString:inputString];
             [mutableString appendString:@", eh?"];
             
             // Operation 5
-            // See Switch Case below
+            // Switch Case below
             
-            // Operation 6
             NSString *deSpaceIt = [inputString stringByReplacingOccurrencesOfString:@" " withString:@"-"];
             
             
-            // print NSString object
         
         switch (number) {
             case 1:
