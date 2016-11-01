@@ -24,8 +24,6 @@ int main(int argc, const char * argv[]) {
             // limit input to max 255 characters
             fgets(inputChars, 255, stdin);
             
-            strtok(inputChars, "\n");
-            
             printf("Choose an operation from 1 to 6: ");
             scanf("%d", &number);
             
